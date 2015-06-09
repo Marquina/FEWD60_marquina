@@ -1,3 +1,9 @@
+/*Why doesn't this remove default block padding?*/
+body {
+  margin: 0px; 
+  padding: 0px; 
+}
+
 h1 a {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-size: 80px;
@@ -36,7 +42,8 @@ h4 a {
 }
 
 /*Trying to make a break line with CSS. Not working. From: http://stackoverflow.com/questions/10933837/line-break-like-br-using-only-css*/
-h4 a:after {
+/*Tried placing a div around the h4s. No idea what to do next*/
+div h4 a:after {
     content:"\a";
     white-space: pre;
 }
@@ -46,6 +53,7 @@ p:first-letter {
   font-size:5em; 
   line-height:1; 
   margin-right:5px;
+  color: #c7c9c9;
 }
 
 .container {
@@ -56,13 +64,19 @@ p:first-letter {
   font-family: Lato;
 }
 
-/*Why is this navigation class not changing the nav items?*/
-.navigation {
-  text-align: center;
-  color: yellow;
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 1.5em;
+.navigation li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.navigation a {
+  color: #c7c9c9;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.nav {
+  float: left;
 }
 
 #myfooter {
