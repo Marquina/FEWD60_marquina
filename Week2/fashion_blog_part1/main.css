@@ -75,6 +75,10 @@ p:first-letter {
   margin: 0;
 }
 
+.article {
+  float: left;
+}
+
 .nav {
   float: left;
 }
