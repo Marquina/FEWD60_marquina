@@ -53,15 +53,25 @@ table {
 */
 
 /*Trying this: http://stackoverflow.com/questions/9966890/best-way-to-do-columns-in-html-css; */
-.clearfix { zoom: 1; }
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
-.clearfix:after { clear: both; }
+.clearfix { 
+  zoom: 1; 
+}
+.clearfix:before, .clearfix:after { 
+  content: "\0020"; 
+  display: block; 
+  height: 0; 
+  verflow: hidden; 
+}
+.clearfix:after { 
+  clear: both; 
+}
 
 .container {
   width: 900px; /*Made width of the container the same width as the images*/ 
   padding: 80px 180px; /* top/bottom and left/right */
   font-family: Lato;
 }
+
 
 h1 a {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
