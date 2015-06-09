@@ -1,7 +1,60 @@
-/*Why doesn't this remove default block padding?*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 body {
-  margin: 0px; 
-  padding: 0px; 
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* END RESET STYLES
+    http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.container {
+  width: 900px; /*Made width of the container the same width as the images*/ 
+  padding: 80px 180px; /* top/bottom and left/right */
+  font-family: Lato;
 }
 
 h1 a {
@@ -10,6 +63,7 @@ h1 a {
     font-weight: 300;
     color: red;
     text-decoration: none;
+    padding: 20px 10px; /* top/bottom and left/right */
 }
 
 h2 {
@@ -18,6 +72,7 @@ h2 {
     font-weight: 400;
     color: black;
     text-decoration: none;
+    padding: 20px 10px; /* top/bottom and left/right */
 }
 
 h2 a {
@@ -34,6 +89,7 @@ h3 {
     font-weight: 400;
     color: #c7c9c9;
     text-decoration: none;
+    padding: 50px 10px 10px 0px; /* top/bottom and left/right */
 }
 
 h4 a {
@@ -41,11 +97,12 @@ h4 a {
     float: right;
 }
 
-/*Trying to make a break line with CSS. Not working. From: http://stackoverflow.com/questions/10933837/line-break-like-br-using-only-css*/
-/*Tried placing a div around the h4s. No idea what to do next*/
-div h4 a:after {
-    content:"\a";
-    white-space: pre;
+.border {
+  padding: 20px 10px; /* top/bottom and left/right */
+  background-color: #FFF;
+  border-bottom: 1px solid black;
+  border-color: #c7c9c9;
+  overflow: hidden;/*clearfix*/
 }
 
 p:first-letter {
@@ -56,35 +113,29 @@ p:first-letter {
   color: #c7c9c9;
 }
 
-.container {
-  width: 1024px;
-  margin: 0 auto;
-  position: relative;  
-  padding: 20px; 
-  font-family: Lato;
-}
 
 .navigation li {
   display: inline-block;
-  margin: 0 0.5em;
+  margin: 20px 10px; /* top/bottom and left/right */
 }
 
 .navigation a {
   color: #c7c9c9;
   font-size: 1.8em;
-  margin: 0;
 }
 
-.article {
-  float: left;
+.bottomnavigation a {
+  color: red;
+  font-size: 1.7em;
 }
 
-.nav {
-  float: left;
+.bottomnavigation li {
+  display: inline-block;
+  margin: 20px 10px; /* top/bottom and left/right */
 }
 
 #myfooter {
-    color:#c7c9c9;
-    text-align:center;
-    padding:5px; 
+    font-size: 2em;
+    color:#c7c9c9;   
+    padding: 10px 180px 20px 180px; /* top/bottom and left/right */
 }
