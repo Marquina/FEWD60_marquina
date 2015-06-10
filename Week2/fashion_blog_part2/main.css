@@ -23,11 +23,13 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older browsers. COMMENTED OUT */
+/*
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+*/
 body {
   line-height: 1;
 }
@@ -46,22 +48,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* END RESET STYLES
-    http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* END RESET STYLES*/
 
 /*Trying this: http://stackoverflow.com/questions/9966890/best-way-to-do-columns-in-html-css; */
 .clearfix { 
   zoom: 1; 
 }
-.clearfix:before, .clearfix:after { 
-  content: "\0020"; 
-  display: block; 
-  height: 0; 
-  verflow: hidden; 
-}
+/*remove clearfix before after*/
 .clearfix:after { 
   clear: both; 
 }
@@ -72,6 +65,22 @@ table {
   font-family: Lato;
 }
 
+#column1 {
+  float: left;
+  margin: 0px;
+  width: 70%;
+}
+
+#column2 {
+  float: right;
+  /*Why do I need margin and width in BOTH HTML and CSS for column2 but not column1?*/
+  width: 30%;
+  padding:5px 15px 5px 5px;
+}
+
+.article {
+  float: left;
+}
 
 h1 a {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -113,6 +122,14 @@ h4 a {
     float: right;
 }
 
+h5 {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #c7c9c9;
+    padding: 0px 10px 10px 0px; 
+}
+
 .border {
   padding: 20px 10px; /* top/bottom and left/right */
   background-color: #FFF;
@@ -121,7 +138,8 @@ h4 a {
   overflow: hidden;/*clearfix*/
 }
 
-p:first-letter {
+/*Changed CSS so only the p in the article class have Large 1st Letter. Right Column Does Not.*/
+ .article p:first-letter {
   float:left; 
   font-size:5em; 
   line-height:1; 
@@ -129,7 +147,7 @@ p:first-letter {
   color: #c7c9c9;
 }
 
-
+/*Top Black Bar Nav*/
 .navigation li {
   display: inline-block;
   background-color:black;
@@ -144,6 +162,7 @@ p:first-letter {
   font-size: 1em;
 }
 
+/*Bottom Nav Red Text*/
 .bottomnavigation a {
   color: red;
   font-size: 1.7em;
@@ -154,9 +173,18 @@ p:first-letter {
   margin: 20px 10px; /* top/bottom and left/right */
 }
 
+/*Sidebar Navigation*/
+.sidenavigation li {
+  color: red;
+}
+
+.kittenad {
+  padding: 20px 10px;
+}
 
 #myfooter {
     font-size: 2em;
     color:#c7c9c9;   
     padding: 10px 180px 20px 180px; /* top/bottom and left/right */
+    clear: both;
 }
