@@ -24,12 +24,11 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers. COMMENTED OUT */
-/*
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-*/
+
 body {
   line-height: 1;
 }
@@ -59,19 +58,24 @@ table {
   clear: both; 
 }
 
+.contentbox {
+
+}
+
+
 .container {
   width: 900px; /*Made width of the container the same width as the images*/ 
-  padding: 80px 180px; /* top/bottom and left/right */
+  padding: 80px 80px; /* top/bottom and left/right */
   font-family: Lato;
 }
 
 #column1 {
   float: left;
-  margin: 0px;
-  width: 70%;
+  width: 75%; /*Width smaller so column 2 has space to float correctly*/
 }
 
 #column2 {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   float: right;
   /*Why do I need margin and width in BOTH HTML and CSS for column2 but not column1?*/
   width: 30%;
@@ -80,6 +84,9 @@ table {
 
 .article {
   float: left;
+  width: 800px; /*Made width of the article the same width as the images*/ 
+  padding: 20px 80px; /* top/bottom and left/right */
+  font-family: Lato;
 }
 
 h1 a {
@@ -100,12 +107,18 @@ h2 {
     padding: 20px 10px; /* top/bottom and left/right */
 }
 
+#betterdressed {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  float:right;
+  font-size: 5px;
+  color: #c7c9c9;
+}
+
 h2 a {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 400;
-    color: black;
-    text-decoration: none;
+    color: #c7c9c9;
 }
 
 h3 {
@@ -165,7 +178,7 @@ h5 {
 /*Bottom Nav Red Text*/
 .bottomnavigation a {
   color: red;
-  font-size: 1.7em;
+  font-size: 1em;
 }
 
 .bottomnavigation li {
