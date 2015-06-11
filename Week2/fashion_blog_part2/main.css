@@ -98,18 +98,20 @@ h1 a {
     padding: 20px 10px; /* top/bottom and left/right */
 }
 
-h2 {
+ h2 {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 400;
-    color: black;
+    color: #c7c9c9;
     text-decoration: none;
-    padding: 20px 10px; /* top/bottom and left/right */
+    padding: 20px 10px; 
 }
+
+
 
 #betterdressed {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  float:right;
+  float: right;
   font-size: 5px;
   color: #c7c9c9;
 }
@@ -158,6 +160,10 @@ h5 {
   line-height:1; 
   margin-right:5px;
   color: #c7c9c9;
+}
+
+.navigation{
+  float:left;
 }
 
 /*Top Black Bar Nav*/
