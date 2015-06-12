@@ -32,9 +32,11 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
+
+/*Commenting out the removal of bullets so they reappear in column2
 ol, ul {
   list-style: none;
-}
+}*/
 blockquote, q {
   quotes: none;
 }
@@ -84,7 +86,7 @@ table {
 
 .article {
   float: left;
-  width: 800px; /*Made width of the article the same width as the images*/ 
+  width: 700px; /*Made width 100px less to col 2 will float right*/ 
   padding: 20px 80px; /* top/bottom and left/right */
   font-family: Lato;
 }
@@ -108,11 +110,10 @@ h1 a {
 }
 
 
-
 #betterdressed {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   float: right;
-  font-size: 5px;
+  font-size: 30px;
   color: #c7c9c9;
 }
 
@@ -195,6 +196,7 @@ h5 {
 /*Sidebar Navigation*/
 .sidenavigation li {
   color: red;
+  margin: 0px 0px 0px 17px;
 }
 
 .kittenad {
