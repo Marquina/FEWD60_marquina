@@ -1,0 +1,62 @@
+
+
+header{
+  padding: 30px; /* top/bottom and left/right */
+  background-color:black;
+  font-family: Lato;
+}
+
+h1 {
+  font-family: 'Droid', Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  background-color:black;
+  color:yellow;
+  text-decoration: none;
+}
+
+nav a{
+  background-color:black;
+  color: white;
+}
+
+nav {
+  position:absolute;
+  left: 600px;
+}
+
+hr {
+  border-color:yellow;
+  margin: 0;
+}
+
+
+.section2 {
+  background-color: #c7c9c9;
+  text-align:center;
+  font-style: italic;
+  font-size: 34px;
+  padding: 30px;
+}
+
+.coworking{ /*Background image for coworking*/  
+  background: transparent
+    url('../images/coworking.jpg')
+    center
+    no-repeat;
+    position: absolute;
+}
+
+.coworking{ /*These are for different browsers*/  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -background-size: cover;
+}
+
+#myfooter {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
