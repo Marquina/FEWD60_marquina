@@ -50,17 +50,20 @@ table {
   border-spacing: 0;
 }
 /* END RESET STYLES*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
 
-/*Trying this: http://stackoverflow.com/questions/9966890/best-way-to-do-columns-in-html-css; */
-.clearfix { 
-  zoom: 1; 
+.cf:after {
+    clear: both;
 }
-/*remove clearfix before after*/
-.clearfix:after { 
-  clear: both; 
-}
+
 
 .contentbox {
+  /*I tried changing the width and padding to the container, but it
+  didn't change the layout how I wanted, so I deleted it.*/
 
 }
 
@@ -73,10 +76,12 @@ table {
 
 #column1 {
   float: left;
-  width: 75%; /*Width smaller so column 2 has space to float correctly*/
+  width: 100%; /*IMPORTANT THIS WAS HOW MADE CONTAINER the FULL WIDTH*/
 }
 
 #column2 {
+  font-size:100%; 
+  font:inherit;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   float: right;
   /*Why do I need margin and width in BOTH HTML and CSS for column2 but not column1?*/
@@ -84,11 +89,15 @@ table {
   padding:5px 15px 5px 5px;
 }
 
-.article {
+article {
   float: left;
-  width: 700px; /*Made width 100px less to col 2 will float right*/ 
+  width: 56%; /*IMPORTANT TO USE PERCENTMade 56% of the container*/ 
   padding: 20px 80px; /* top/bottom and left/right */
   font-family: Lato;
+}
+
+#column1 img { /*IMPORTANT call out the IMAGE WIDTH to be 100 percent of container*/
+  width: 100%;
 }
 
 h1 a {
@@ -97,10 +106,11 @@ h1 a {
     font-weight: 300;
     color: red;
     text-decoration: none;
-    padding: 20px 10px; /* top/bottom and left/right */
+    float: left;
 }
 
- h2 {
+
+h2 {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -181,6 +191,9 @@ h5 {
   color: #c7c9c9;
   font-size: 1em;
 }
+img {
+  width: 100%;
+}
 
 /*Bottom Nav Red Text*/
 .bottomnavigation a {
@@ -192,6 +205,7 @@ h5 {
   display: inline-block;
   margin: 20px 10px; /* top/bottom and left/right */
 }
+
 
 /*Sidebar Navigation*/
 .sidenavigation li {
