@@ -1,0 +1,48 @@
+Pseudocode for Rock Paper Scissors
+**********************************
+ROCK PAPER SCISSORS:
+Take in one of three choices from two players
+Know which is value (r,p, or s) are greater than the other
+Check the values given by the players
+See if one is greater or they match
+Either tell which player one or if they match and should play again
+**********************************
+
+Player 1 = P1
+Player 2 = P2
+Rock = r
+Paper = p
+Scissors = s
+
+r > s /*Rock beats Scissors*/
+p > r /*Paper beats Rock*/
+s > p /*Scissors beats Paper*/
+
+if P1 chooses r { 
+   if (P2 chooses p) 
+      P2 wins 
+  else if(P2 chooses s) 
+      P1 wins 
+  else (P2 chooses p)
+      It's a tie 
+} 
+
+else if P1 chooses p { 
+  if (P2 chooses p) 
+      It's a tie
+  else if(P2 chooses s) 
+      P2 wins 
+  else (P2 chooses r)
+      P1 wins 
+
+} 
+
+else if P1 chooses s{ 
+  if (P2 chooses p) 
+      P1 wins 
+  else if(P2 chooses s) 
+      It's a tie
+  else (P2 chooses r)
+      P2 wins
+} 
+else Player1 incorrect option. Choose again 
