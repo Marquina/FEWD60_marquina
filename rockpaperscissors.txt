@@ -23,7 +23,7 @@ if P1 chooses r {
       P2 wins 
   else if(P2 chooses s) 
       P1 wins 
-  else (P2 chooses p)
+  else (P2 chooses r)
       It's a tie (play again)
 } 
 
