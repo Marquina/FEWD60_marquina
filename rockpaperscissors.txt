@@ -5,7 +5,7 @@ Take in one of three choices from two players
 Know which is value (r,p, or s) are greater than the other
 Check the values given by the players
 See if one is greater or they match
-Either tell which player one or if they match and should play again
+Either tell which player won; if they match and should play again
 **********************************
 
 Player 1 = P1
@@ -24,12 +24,12 @@ if P1 chooses r {
   else if(P2 chooses s) 
       P1 wins 
   else (P2 chooses p)
-      It's a tie 
+      It's a tie (play again)
 } 
 
 else if P1 chooses p { 
   if (P2 chooses p) 
-      It's a tie
+      It's a tie (play again)
   else if(P2 chooses s) 
       P2 wins 
   else (P2 chooses r)
@@ -41,8 +41,7 @@ else if P1 chooses s{
   if (P2 chooses p) 
       P1 wins 
   else if(P2 chooses s) 
-      It's a tie
+      It's a tie (play again)
   else (P2 chooses r)
       P2 wins
 } 
-else Player1 incorrect option. Choose again 
