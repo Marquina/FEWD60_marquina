@@ -1,21 +1,21 @@
-/* MIP: Why does the spacing change if I place this BELOW the clearfix?
+ MIP: Why does the spacing change if I place this BELOW the clearfix?
 ==========================================================================
 Author's custom styles rewritten from codepen: http://codepen.io/Marquina/pen/yNoRyz
 ========================================================================== */
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #aaa;
+    background-color: #aaa; /*MIP Why doesn't anything change when I make this red?*/
 }
 
 a {
     color: yellow;
-    text-decoration: none;
+    text-decoration: none;/*Removes Line under StartupMatchmaker text and other nav items*/
 }
 
 .container {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; /*MIP: Do I need 'auto' does auto center it?*/
 }
 
 .site-header {
@@ -33,41 +33,21 @@ a {
     font-family: 'Merriweather', serif;
 }
 
-.navigation {
-    width: 100%;
-    float: right;
-    display: none;
-}
-
-.hamburger {
-    color: yellow;
-    font-size: 4em;
-    float:right;
-    }
-
-.horizontal-nav {
-    padding: 0;
-    list-style: none;
+nav {
+   margin-left: 250px;
 }
 
 
-.main-nav {
-    font-size: 22px;
+nav a {
+    margin-right: 20px;
     color: white;
 }
-.main-nav li {
-    margin-right: 20px;
-}
 
-.main-nav li:last-child{
+nav a:last-child{
     margin-right: 0;
 }
 
-.main-nav a {
-    color: white;
-}
-
-.main-nav strong {
+.strong {
     text-transform: uppercase;
     font-size: 25px;
     font-family: 'Oswald';
@@ -166,7 +146,16 @@ a {
 }
 
 
+/*Three Column Layout */
 
+* {box-sizing:  border-box;}
+/*box sizing Makes the width property the maximum width of the element*/
+
+.block {
+  width: 33%;
+  display: inline-block;
+  padding: 2%;
+}
 
 /*
  * Clearfix: contain floats
@@ -191,8 +180,9 @@ a {
 }
 
 
+
 /* MEDIA QUERIES FOR ASSIGNMENT (SELF) MIP - what does this mean?*/
-@media screen and (min-width: 960px) {
+/*@media screen and (min-width: 960px) {
    
    .body {
     width: 100%;
@@ -233,7 +223,7 @@ a {
 }
 
 
-
+*/
 /*Marquina's Old Style That Did Not Work
 
 header{
@@ -296,4 +286,3 @@ hr {
     text-align:center;
     padding:5px; 
 }
-*/
