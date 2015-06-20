@@ -29,6 +29,18 @@ a {
     font-family: 'Merriweather', serif;
 }
 
+/*Javascript Mouseover Nav*/
+div { 
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+#mouse-over-me {
+  background-color: rgba(0,255,0,0.5);
+}
+
+
 nav {
    margin-left: 250px;
 }
