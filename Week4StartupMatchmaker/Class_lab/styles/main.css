@@ -29,7 +29,7 @@ a {
     font-family: 'Merriweather', serif;
 }
 
-/*Javascript Mouseover Nav*/
+/*START Javascript Mouseover Nav*/
 div { 
   height: 200px;
   width: 100%;
@@ -39,7 +39,7 @@ div {
 #mouse-over-me {
   background-color: rgba(0,255,0,0.5);
 }
-
+/*END Javascript Mouseover Nav*/
 
 nav {
    margin-left: 250px;
