@@ -4,11 +4,27 @@
 		<meta charset="utf-8">
 		<title>Temperature Converter</title>
 		<!-- If you like, link to either reset.css or normalize.css here. -->
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-
-		<!-- Build your page here, leaving the script tag after all your HTML, but before the </body> tag -->
+    <form name="conversionForm">
+    <table border="1">
+    <tbody>
+    <tr>
+        <td>Fahrenheit</td>
+        <td><input name="tempF" type="text"/></td>
+        <td><button onclick="convertToC">Convert to Celsius</button></td>
+    </tr>
+    <tr>
+        <td>Celsius</td>
+        <td><input name="tempC" type="text"/></td>
+        <td><button onclick="convertToF">Convert to Fahrenheit</button></td>
+    </tr>
+    </form>
+    </tbody>
+    </table>
 
 		<script src="js/main.js"></script>
 
