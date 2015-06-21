@@ -29,7 +29,7 @@ a {
     font-family: 'Merriweather', serif;
 }
 
-/*START Javascript Mouseover Nav*/
+/*START Javascript Mouseover Nav
 div { 
   height: 200px;
   width: 100%;
@@ -40,6 +40,43 @@ div {
   background-color: rgba(0,255,0,0.5);
 }
 /*END Javascript Mouseover Nav*/
+
+/*START 2nd Try Javascript Mouseover Nav*/
+div {
+  display: inline-block;
+  width: 200px;
+
+  background-color:#e74c3c;
+  margin-right: 30px;
+  text-align:center;
+  /*line-height:75px;*/
+  font-family: "Helvetica";
+  text-transform: uppercase;
+  color:white;
+  font-size: 20px;
+  font-weight:bold;
+  border-radius:10px; /*rounded corners, also how to create circles create w and h 200 and then 50%border radiua*/
+  cursor:pointer;
+  border-bottom: 5px solid #c0392b; /*border must always have 3 properties: size style color*/;
+  padding: 25px 0px;
+  transition: background-color ease .5s, transform 1s ease 2s;
+  /*transition-delay: 1s;*/
+  transition: 1s all ease; /*want all those divs to transition*/
+
+}
+
+div:hover {
+  background-color: #3498db;
+  border-bottom: 5px solid #2980b9;
+  transform: rotate(360deg);
+  
+}
+
+.button:hover {
+  background-color:#2ecc71;
+  border-bottom: 5px solid #27ae60;
+}
+/*END 2nd Try Javascript Mouseover Nav*/
 
 
 nav {
