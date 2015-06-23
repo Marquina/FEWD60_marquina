@@ -10,8 +10,8 @@
 
 <body> 
     <div class="container"> 
-      <header class="site-header clearfix">
-          <h1 class="logo blue-steel"><a href="/">Startup Matchmaker</a></h1> 
+      <header class="site-header clearfix"><!--MIP used to say site-header clearfix -->
+          <h1 class="logo"><a href="/"><!--MIP removed logo class -->Startup Matchmaker</a></h1> 
 
     <!--START Javascript Mouseover Nav
     <div class="mouse-over-me">Put your mouse over me!</div>
@@ -32,21 +32,19 @@
         </ul>
       </div>END NAVIGATION JAVASCRIPT TRY #2 -->
 
-      <h1 class="democlass">Hello World</h1>
 
-      <button onclick="myFunction()">Try it</button>
+<!-- Comment Out on-click button
+      <button onclick="myFunction()">Try it</button> -->
 
-
-
-
-          <nav>
-                <a href="#" class="strong">Find Developers</strong></a>
+          <nav onmouseover="onColor(this)" onmouseout="offColor(this)" href="#" class="strong">
+                <a>Find Developers</strong></a>
                 <a href="#" class="strong">Find Designers</a>
                 <a href="#">How it Works</a>
                 <a href="#">Our Team</a>
                 <a href="#">Blog</a>
-          </nav>\
+          </nav>
         </header>
+
 
 
         <!-- Tagline -->

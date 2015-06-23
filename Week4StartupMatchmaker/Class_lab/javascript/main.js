@@ -4,14 +4,13 @@
 //});
 //END 1st Try Javascript Mouseover Nav 
 
-//START 2nd Try Javascript Mouseover Nav 
-/*function onColor(listElement) {
+function onColor(listElement) {
     listElement.style.background = "green";
 }
 
 function offColor(listElement) {
     listElement.style.background = "orange"; 
-}*/
+}
 //END 2nd Try Javascript Mouseover Nav 
 
 
@@ -24,5 +23,5 @@ function mouseOut() {
 }
 
 function myFunction() {
-    document.getElementsByTagName("H1")[0].removeAttribute("class"); 
+    document.getElementsByTagName("h1")[0].removeAttribute("class"); 
 }

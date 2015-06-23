@@ -14,7 +14,7 @@ a {
     margin: 0 auto; /*MIP: Do I need 'auto' does auto center it?*/
 }
 
-.site-header {
+.site-header { /*MIP removed "site-header clearfix" from header class. Like 13 was    <header class="site-header clearfix">*/
     background-color: black;
     /*border-bottom: solid yellow 2px;*/
     border-bottom-style: solid;
@@ -23,11 +23,17 @@ a {
     padding: 20px;
 }
 
+.blue-steel {
+    color: blue;
+    font-size: 50px;
+}
+
 .logo {
     margin: 0;
     font-size: 32px;
     font-family: 'Merriweather', serif;
 }
+
 
 /*START Javascript Mouseover Nav
 div { 
@@ -61,20 +67,9 @@ END Javascript Mouseover Nav*/
 END NAVIGATION JAVASCRIPT TRY #2 */
 
 
-.democlass {
-    color: red;
-}
-
-.blue-steel {
-    color: blue;
-}
-
-
-
-
-
 nav {
    margin-left: 250px;
+   background-color:orange;
 }
 
 
