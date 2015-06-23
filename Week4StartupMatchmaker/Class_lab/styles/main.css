@@ -29,17 +29,48 @@ a {
     font-family: 'Merriweather', serif;
 }
 
-/*START Javascript Mouseover Nav*/
+/*START Javascript Mouseover Nav
 div { 
   height: 200px;
   width: 100%;
   text-align: center;
 }
 
-#mouse-over-me {
+.mouse-over-me {
   background-color: rgba(0,255,0,0.5);
 }
-/*END Javascript Mouseover Nav*/
+END Javascript Mouseover Nav*/
+
+
+/* START NAVIGATION JAVASCRIPT TRY #2 
+#menu ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+
+#menu li {
+    float: left; 
+    padding: 10px;
+    width: 100px; 
+    background-color: orange;
+    border-style: ridge;
+}
+END NAVIGATION JAVASCRIPT TRY #2 */
+
+
+.democlass {
+    color: red;
+}
+
+.blue-steel {
+    color: blue;
+}
+
+
+
 
 
 nav {
