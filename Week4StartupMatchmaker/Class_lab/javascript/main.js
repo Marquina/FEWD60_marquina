@@ -1,11 +1,11 @@
-//sTART1st Try Javascript Mouseover Nav 
+//START1st Try Javascript Mouseover Nav 
 //document.getElementByClass("mouse-over-me").addEventListener("mouseover", function ()  {
 //  alert("You put your mouse over the div");
 //});
 //END 1st Try Javascript Mouseover Nav 
 
 function onColor(listElement) {
-    listElement.style.background = "green";
+    listElement.style.background = "blue";
 }
 
 function offColor(listElement) {
@@ -15,13 +15,13 @@ function offColor(listElement) {
 
 
 function mouseOver() {
-    document.getElementById("demo").style.color = "red";
-}
+    document.getElementById("blue-steel").style.color = "red";
+ }
 
-function mouseOut() {
-    document.getElementById("demo").style.color = "black";
-}
+// function mouseOut() {
+//     document.getElementById("demo").style.color = "black";
+// }
 
-function myFunction() {
-    document.getElementsByTagName("h1")[0].removeAttribute("class"); 
-}
+// function myFunction() {
+//     document.getElementsByTagName("h1")[0].removeAttribute("class"); 
+// }
