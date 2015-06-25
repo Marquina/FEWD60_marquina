@@ -23,7 +23,7 @@ a {
     padding: 20px;
 }
 
-/*Javascript setAttribute includes button and .blue-steel class*/
+/*Javascript setAttribute includes button and .blue-steel*/
 button {
   color: purple;
   padding: 5px;
@@ -40,6 +40,17 @@ button {
     /*transition: background-color ease .5s, transform 1s ease 2s;
     /*transition-delay: 1s;
     transition: 1s all ease; want all those divs to transition*/
+    text-transform: uppercase;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    text-align: center;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+    transition-property: box-shadow;
+    transition-duration: 200ms;
 }
 
 nav {
