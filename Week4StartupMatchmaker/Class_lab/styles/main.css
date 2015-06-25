@@ -23,18 +23,27 @@ a {
     padding: 20px;
 }
 
+/*Javascript setAttribute includes button and .blue-steel class*/
+button {
+  color: purple;
+  padding: 5px;
+  font-family: impact;
+  opacity: .75;
+  padding: 25px;
+}
 
-/*This blue-steel class is not what causes the blue*/
 .blue-steel {
     color: blue;
     font-size: 50px;
-    transition: background-color ease .5s, transform 1s ease 2s;
-    /*transition-delay: 1s;*/
-    transition: 1s all ease; /*want all those divs to transition*/
+    background: yellow;
+    opacity: .75;
+    /*transition: background-color ease .5s, transform 1s ease 2s;
+    /*transition-delay: 1s;
+    transition: 1s all ease; want all those divs to transition*/
 }
 
 nav {
-  color:white;
+  /*color:white; Commented out bc it overrides blue-steel*/
   font-size: 20px;
   font-weight:bold;
   padding: 25px;

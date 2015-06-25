@@ -14,9 +14,21 @@ function offColor(listElement) {
 //END 2nd Try Javascript Mouseover Nav 
 
 
-function mouseOver() {
-    document.getElementById("blue-steel").style.color = "red";
- }
+function changeColor() {
+  document.getElementById("button").setAttribute("class","blue-steel");
+}
+
+function correctColor() {
+  document.getElementById("button").removeAttribute("class","blue-steel");  
+}
+
+
+
+
+// START 3rd Try
+//function mouseOver() {
+//     document.getElementById("blue-steel").style.color = "red";
+//  }
 
 // function mouseOut() {
 //     document.getElementById("demo").style.color = "black";
