@@ -14,21 +14,44 @@
 
 <body> 
     <div class="container"> 
-      <header class="site-header clearfix">
-          <h1 class="logo"><a href="/">Startup Matchmaker</a></h1> 
+      <header class="site-header clearfix"><!--MIP used to say site-header clearfix -->
+          <h1 class="logo"><a href="/"><!--MIP removed logo class -->Startup Matchmaker</a></h1> 
 
-    <!--START Javascript Mouseover Nav-->
-    <div id="mouse-over-me">Put your mouse over me!</div>
-    <!--END Javascript Mouseover Nav-->
+    <!--START Javascript Mouseover Nav
+    <div class="mouse-over-me">Put your mouse over me!</div>
+    END Javascript Mouseover Nav-->
 
-          <nav>
+      <!--START NAVIGATION JAVASCRIPT TRY #2 
+      <div id="menu">
+        <ul>
+          <li onmouseover="onColor(this)" onmouseout="offColor(this)">
+            <a href="#home">Home</a>
+          </li>
+          <li onmouseover="onColor(this)" onmouseout="offColor(this)">
+            <a href="#about">About</a>
+          </li>
+          <li onmouseover="onColor(this)" onmouseout="offColor(this)">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>END NAVIGATION JAVASCRIPT TRY #2 -->
+
+
+<!-- Comment Out on-click button
+      <button onclick="myFunction()">Try it</button> -->
+
+          <nav onmouseover="onColor(this)" onmouseout="offColor(this)" href="#" class="strong">
                 <a href="#" class="strong">Find Developers</strong></a>
                 <a href="#" class="strong">Find Designers</a>
                 <a href="#">How it Works</a>
                 <a href="#">Our Team</a>
                 <a href="#">Blog</a>
-          </nav>\
+          </nav>
         </header>
+
+        <!-- Javascript setAttribute -->
+        <!-- <button id="button" onmouseover = "changeColor()" onmouseout = "correctColor()">Meet your Match!</button> -->
+
 
         <!-- Tagline -->
         <div class="tagline">
@@ -49,7 +72,7 @@
                 <div class="block">
                     <h3 class="block-heading">Create a Profile</h3>
                     <p class="block-copy">Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
-                    <a class="btn btn-block" href="#">Sign up Now</a>
+                    <a id="button" onmouseover = "changeColor()" onmouseout = "correctColor()" class="btn btn-block" href="#">Sign up Now</a>
                 </div>
 
                 <div class="block">

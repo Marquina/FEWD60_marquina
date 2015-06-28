@@ -14,7 +14,7 @@ a {
     margin: 0 auto; /*MIP: Do I need 'auto' does auto center it?*/
 }
 
-.site-header {
+.site-header { /*MIP removed "site-header clearfix" from header class. Like 13 was    <header class="site-header clearfix">*/
     background-color: black;
     /*border-bottom: solid yellow 2px;*/
     border-bottom-style: solid;
@@ -23,27 +23,56 @@ a {
     padding: 20px;
 }
 
+/*Javascript setAttribute includes button and .blue-steel*/
+button {
+  color: purple;
+  padding: 5px;
+  font-family: impact;
+  opacity: .75;
+  padding: 25px;
+}
+
+.blue-steel {
+    color: blue;
+    font-size: 50px;
+    background: yellow;
+    opacity: .75;
+    transition: background-color ease .5s, transform 1s ease 2s;
+    transition-delay: 1s;
+    transition: 1s all ease; want all those divs to transition
+    /*text-transform: uppercase;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    text-align: center;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+    transition-property: box-shadow;
+    transition-duration: 200ms;*/
+}
+
+nav {
+  /*color:white; Commented out bc it overrides blue-steel*/
+  font-size: 20px;
+  font-weight:bold;
+  padding: 25px;
+  transition: background-color ease .5s, transform 1s ease 2s;
+  /*transition-delay: 1s;*/
+  transition: 1s all ease; /*want all those divs to transition*/
+
+}
+
 .logo {
     margin: 0;
     font-size: 32px;
     font-family: 'Merriweather', serif;
 }
 
-/*START Javascript Mouseover Nav*/
-div { 
-  height: 200px;
-  width: 100%;
-  text-align: center;
-}
-
-#mouse-over-me {
-  background-color: rgba(0,255,0,0.5);
-}
-/*END Javascript Mouseover Nav*/
-
-
 nav {
    margin-left: 250px;
+   background-color:orange;
 }
 
 
@@ -61,6 +90,41 @@ nav a:last-child{
     font-size: 25px;
     font-family: 'Oswald';
 }
+
+
+
+/*START Javascript Mouseover Nav
+div { 
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.mouse-over-me {
+  background-color: rgba(0,255,0,0.5);
+}
+END Javascript Mouseover Nav*/
+
+
+/* START NAVIGATION JAVASCRIPT TRY #2 
+#menu ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+
+#menu li {
+    float: left; 
+    padding: 10px;
+    width: 100px; 
+    background-color: orange;
+    border-style: ridge;
+}
+END NAVIGATION JAVASCRIPT TRY #2 */
+
+
 
 .tagline {
     font-family: 'Merriweather', serif;
