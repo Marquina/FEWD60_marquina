@@ -69,7 +69,7 @@ table {
 
 
 .container {
-  width: 900px; /*Made width of the container the same width as the images*/ 
+  /*width: 900px;*/ /*Made width of the container the same width as the images*/ 
   padding: 80px 80px; /* top/bottom and left/right */
   font-family: Lato;
 }
@@ -85,6 +85,9 @@ table {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   float: right;
   /*Why do I need margin and width in BOTH HTML and CSS for column2 but not column1?*/
+  /*EM: you have added a width: 56% to the article tag. So #column1 is expanding to fit 100% of the article's width.
+  If you dropped the width of column1 down to 75%, it would display at 75% of the article's set width (56%).
+  I'm nt sure about the margin....I don't see any margin on your column ids */
   width: 30%;
   padding:5px 15px 5px 5px;
 }
@@ -175,6 +178,7 @@ h5 {
 
 .navigation{
   float:left;
+  width: 100%;
 }
 
 /*Top Black Bar Nav*/
@@ -182,14 +186,15 @@ h5 {
   display: inline-block;
   background-color:black;
   color:white;
-  clear:both;
   text-align:center;
-  padding: 23px 40px; 
+  padding: 23px 2px; 
+  /*EM: add width:; 16% to get navigation to stretch the width of the page
 }
 
 .navigation a {
   color: #c7c9c9;
   font-size: 1em;
+
 }
 img {
   width: 100%;
