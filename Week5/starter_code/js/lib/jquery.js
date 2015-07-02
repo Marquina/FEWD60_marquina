@@ -1,8 +1,20 @@
-//MIP will return value from DOM/HTML
-$("body").change(function() {
-  $('body').css("background-image", 'url("' + this.value + '")');
+//MIP 
+$(document).ready(function() {
+  event.preventDefault();  // clicked anchors will not take the browser to a new URL.
+  var city = $('#city-input').val
+  $('#city-input').val('');
+  console.log(city);
+  if (city == "NYC"){ // How do I do other options: ny, New york, etc?
+    $('div').attr('class','nyc');
+  } else  {      
+     $('div').attr('class','la');
+  }
 });
 
+//MIP 
+$('body').change(function() {
+  $('submit-btn').onClick("background-image", 'url("' + this.value + '")');
+});
 
 
 
