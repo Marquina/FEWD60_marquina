@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+document.getElementById("mouse-over-me").addEventListener("mouseover", function ()  {
+  alert("You put your mouse over the div");
+});
+=======
 //START1st Try Javascript Mouseover Nav 
 //document.getElementByClass("mouse-over-me").addEventListener("mouseover", function ()  {
 //  alert("You put your mouse over the div");
@@ -37,3 +42,4 @@ function correctColor() {
 // function myFunction() {
 //     document.getElementsByTagName("h1")[0].removeAttribute("class"); 
 // }
+>>>>>>> origin/master
