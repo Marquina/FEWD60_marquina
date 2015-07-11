@@ -34,20 +34,6 @@
   background-position:49% 50%
 }
 
-.page-social 
-.page-social__dribbble:hover {
-  background-image:url(../img/dribbble-red.png)
-}
-
-.white .page-social 
-.page-social__dribbble {
-  background-image:url(../img/dribbble-white.png)
-}
-
-.white .page-social 
-.page-social__dribbble:hover {
-  background-image:url(../img/dribbble-red.png)
-}
 
 .white .page-social .page-social__instagram {
   background-image:url(../img/instagram-white.png)
@@ -133,12 +119,13 @@
   background-image:url(../img/dribbble-red.png)
 }
 
+/*Style for name Marquina at top left of page*/
 .page-head__logo {
-  background-image:url(../img/mikekus.png);
+/*  background-image:url(../img/mikekus.png);*/
   height:18px
 }
 
-.page-head__logo:hover {
+/*.page-head__logo:hover {
   background-image:url(../img/mikekus-red.png)
 }
 
@@ -148,7 +135,7 @@
 
 .white .page-head__logo:hover {
   background-image:url(../img/mikekus-red.png)
-}
+}*/
 
 .next,.previous {
   background-image:url(../img/arrow-right.png)
