@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#submit-btn').click(function(){ 
   event.preventDefault();  // bc normally goes to database. clicked anchors will not take the browser to a new URL.
     var city = $('#city-type').val(); //stores input in a value
-    // var cityAdjust = #city-type.trim(); //Try to use .trim
+    city = city.toLowerCase().trim();; //Try to use .trim
     $('#city-input').val(''); //converts to string
        console.log(city);
     if (city == "NYC" || city =="ny"|| city =="nyc" || city == "New York" || city == "New York City" || city == "new york city"){ // How do I do other options: ny, New york, etc?
