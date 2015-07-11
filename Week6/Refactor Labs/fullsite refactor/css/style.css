@@ -3,6 +3,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 mark, rp, rt, ruby, summary, time{ display: inline }
 
 /* Add font rules here */
+@import url(http://fonts.googleapis.com/css?family=Lobster|Raleway:200);
 
 /* Site-wide properties ======================================================== */
 body{
@@ -104,10 +105,10 @@ ul.anchorstory { position: relative; left: 450px; top: -50px; display: block; li
 ul.anchorstory li{ display:inline; margin-left: 10px;}
 ul.anchorstory li a{text-decoration:none;}
 /* Fonts types and spacing */
-h1{ font: 88px 'Lobster1.1Regular', Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#5687C9; }
-    h1 span{ font: 88px RalewayThin, Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#AB7008; letter-spacing: -4px }
+h1{ font: 88px 'Lobster', Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#5687C9; }
+    h1 span{ font: 88px 'Raleway', Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#AB7008; letter-spacing: -4px }
 
-h2 { font-family: 'Lobster1.1Regular', Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#5687C9; }
+h2 { font-family: 'Lobster', Arial, “Helvetica Neue”, Helvetica, sans-serif; color:#5687C9; }
 
 p {margin:0 0 1.5em;}
 
