@@ -45,6 +45,8 @@ p {
   border: 3px solid black;
 }
 
+/*change to classes
+
 #grayButton {
   background: gray;
 }
@@ -55,5 +57,18 @@ p {
   background: blue;
 }
 #yellowButton {
+  background: yellow;
+}*/
+
+.gray {
+  background: gray;
+}
+.white {
+  background: white;
+}
+.blue {
+  background: blue;
+}
+.yellow {
   background: yellow;
 }
