@@ -348,7 +348,7 @@ a.button {
 .clearfix {
   display: block;
 }
-/* close commented backslash hack */
+/* Media Queries - close commented backslash hack */
 @media screen and (max-width: 580px) {
   .content {
     width: 95%;
