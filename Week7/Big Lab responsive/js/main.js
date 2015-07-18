@@ -1,17 +1,16 @@
 document.getElementsByTagName("li")[0].addEventListener("click",function(){
 	if(!this.parentNode.getAttribute("class")){
 		this.parentNode.setAttribute("class","pullDown"); 
-	};
-	else{
+	} else{
 		this.parentNode.removeAttribute("class");
 	}
 });
 
-$(window).resize( function(){
-  console.log('working');
- if (window.width < 768) {
-  $('a.button').text("Click Here");
- } else {
-  $('a.button').text("Stop");
+$(document).ready(function(){
+$(window).resize(function(){
+ if ($(window).width() < 768) {
+  $('#button').text("Click Here");
+  // $('a.button').text("Stop");
  }
+});
 });
