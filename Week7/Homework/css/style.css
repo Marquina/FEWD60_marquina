@@ -305,6 +305,7 @@ footer p {
     background: #033048;
     padding: 25px 0;
     overflow: hidden;
+    margin: 0 auto;  /*added margin: 0 auto; */
   }
   header .logo {
     color: #fff;
@@ -316,6 +317,11 @@ footer p {
     float: right;
     margin-top: 15px, auto; /*added auto*/
   }
+
+  header nav ul {
+    margin: 0 auto;  /*added this section to move the nav using auto*/
+  }
+
   header nav ul li {
     display: inline-block;
     margin: 0 0 0 40px;
