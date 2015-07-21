@@ -296,8 +296,9 @@ footer p {
     padding: 0 3%;
   }
   .logo {
-    font-size: 40px; /*Changed to 40px*/
+    font-size: 90%; /*Changed to 20px*/
     font-weight: 800;
+    
   }
 
   header {
@@ -328,7 +329,7 @@ footer p {
   }
   header nav ul li a {
     color: #f9e42e;
-    font-size: 20px;
+    font-size: 20px;  /*Changed to 20px*/
   }
 }
 
@@ -338,7 +339,7 @@ footer p {
     padding: 0 3%;
   }
   .logo {
-    font-size: 30px; /*Changed to 30px*/
+    font-size: 15px; /*Changed to 15px*/
     font-weight: 800;
   }
 
@@ -364,7 +365,7 @@ footer p {
   }
   header nav ul li a {
     color: #f9e42e;
-    font-size: 15px;
+    font-size: 15px;  /*Changed to 15px*/
   }
 
 }
@@ -376,7 +377,7 @@ footer p {
   padding: 0 3%;
 }
 .logo {
-  font-size: 20px; /*Changed to 20px*/
+  font-size: 10px; /*Changed to 10px*/
   font-weight: 800;
 }
 
@@ -402,7 +403,7 @@ header nav ul li {
 }
 header nav ul li a {
   color: #f9e42e;
-  font-size: 20px;
+  font-size: 10px;  /*Changed to 10px*/
 }
 
 
