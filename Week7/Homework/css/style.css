@@ -64,8 +64,8 @@ a {
 
 /* Center the container */
 .container {
-  width: 960px;
-  margin: 0 auto;
+  max-width: 1300px; /*Made the width greater than width: 960px; in the original css*/
+  margin: 0 10%;
 }
 .logo {
   font-size: 48px;
@@ -292,8 +292,7 @@ footer p {
 
 @media screen and (max-width:1000px) and (min-width: 768px){
   .container {
-    width: 1000px;
-    margin: 0 auto;
+    margin: 0 10%;
     padding: 0 3%;
   }
   .logo {
@@ -333,10 +332,9 @@ footer p {
   }
 }
 
-@media screen and (max-width:768px) and (min-width: 480px){
+@media screen and (max-width:768px) and (min-width: 481px){
   .container {
-    width: 768px;
-    margin: 0 auto;
+    margin: 0 10%;
     padding: 0 3%;
   }
   .logo {
@@ -374,8 +372,7 @@ footer p {
 @media (max-width:480px) {
 
 .container {
-  width: 480px;
-  margin: 0 auto;
+  margin: 0 10%;
   padding: 0 3%;
 }
 .logo {
