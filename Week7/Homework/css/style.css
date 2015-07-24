@@ -380,7 +380,7 @@ footer p {
     padding: 0 3%;
   }
   .logo {
-    font-size: 15px; /*Changed to 15px*/
+    font-size: 20px; /*Changed to 20px*/
     font-weight: 800;
   }
 
@@ -460,7 +460,7 @@ footer p {
   padding: 0 3%;
 }
 .logo {
-  font-size: 10px; /*Changed to 10px*/
+  font-size: 20px; /*Changed to 10px*/
   font-weight: 800;
 }
 
@@ -487,6 +487,14 @@ header nav ul li {
 header nav ul li a {
   color: #f9e42e;
   font-size: 10px;  /*Changed to 10px*/
+}
+
+.toggle {
+  display: none;
+}
+
+.expand {
+ display: block !important; 
 }
 
   /*blog post section*/

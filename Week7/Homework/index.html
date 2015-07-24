@@ -18,7 +18,7 @@
 				<h1 class="logo">Relaxr</h1>
 				<nav>
 					<a id="nav-toggle" href="#"><span></span></a>
-					<ul>
+					<ul class="toggle">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="#">About</a></li>
 						<li><a href="#">Contact</a></li>
@@ -63,6 +63,18 @@
 			</ul>
 
 			<p class="copyright">Copyright 2015. Relaxr.</p>
+		
 		</footer>
+
+		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		<script>
+
+		 $(document).ready(function() {
+		 	$( '#nav-toggle' ).click(function(){
+		 	  console.log("test");
+		    	     $('.toggle').toggleClass('expand');
+		  });
+		});
+		</script>
 	</body>
 </html>
