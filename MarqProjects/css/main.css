@@ -348,7 +348,7 @@ a.button {
 .clearfix {
   display: block;
 }
-/* Media Queries - close commented backslash hack */
+/* MIP Media Queries - close commented backslash hack */
 @media screen and (max-width: 580px) {
   .content {
     width: 95%;
@@ -365,7 +365,7 @@ a.button {
     font-size: 18px;
   }
   .social {
-    margin: 5px auto;
+    margin: 3px auto;
     float: none;
   }
   .title {
@@ -390,4 +390,7 @@ a.button {
     float: none;
     margin: 10px 0;
   }
+
 }
+
+
