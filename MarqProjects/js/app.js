@@ -51,6 +51,17 @@ $('body').on('click', '.close', function(){
   },500);
 });
 
+
+function sendMail() {
+    var link = "mailto:marquinamarie@gmail.com"
+             + "?cc=marquinamarie@gmail.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape(document.getElementById('formoid').value)
+    ;
+
+    window.location.href = link;
+}
+
 // Contact form pop up mailto on submit button
   // $("#formoid").submit(function(event) {
 
