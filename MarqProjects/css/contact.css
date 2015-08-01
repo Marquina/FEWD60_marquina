@@ -45,7 +45,7 @@ form input:focus, form textarea:focus {
   -webkit-box-shadow: 0 0px 2px #e74c3c !important;
   box-shadow: 0 0px 2px #e74c3c !important;
 }
-form #input-submit {
+form #join_list {
   color: white;
   background: #ff3709;
   cursor: pointer;

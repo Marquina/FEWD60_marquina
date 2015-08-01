@@ -52,24 +52,24 @@ $('body').on('click', '.close', function(){
 });
 
 // Contact form pop up mailto on submit button
-  $("#formoid").submit(function(event) {
+  // $("#formoid").submit(function(event) {
 
-    event.preventDefault();
+  //   event.preventDefault();
 
-    var $form = $(this),
-      url = $form.attr('action');
+  //   var $form = $(this),
+  //     url = $form.attr('action');
 
-    var posting = $.post(url, {
-      name: $('#input-name').val(),
-      email: $('#input-email').val(),
-      subject: $('#input-subject').val(),
-      message: $('#input-message').val()
-    });
+  //   var posting = $.post(url, {
+  //     name: $('#input-name').val(),
+  //     email: $('#input-email').val(),
+  //     subject: $('#input-subject').val(),
+  //     message: $('#input-message').val()
+  //   });
 
-    posting.done(function(data) {
-      alert('success');
-    });
-  });
+  //   posting.done(function(data) {
+  //     alert('success');
+  //   });
+  // });
 
 // Contact form submission sends me an email
 // $(document).ready(function () {
