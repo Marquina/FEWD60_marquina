@@ -366,7 +366,8 @@ a.button {
   }
   .social {
     margin: 3px auto;
-    float: none;
+    /*float: none;*/
+    margin-right: 20%;
   }
   .title {
     margin: 20px 0;
@@ -390,7 +391,10 @@ a.button {
     float: none;
     margin: 10px 0;
   }
-
+  /*change font awesome icon size*/
+/*  li a {
+    font-size: 1px;
+  }*/
 }
 
 
