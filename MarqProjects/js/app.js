@@ -51,7 +51,7 @@ $('body').on('click', '.close', function(){
   },500);
 });
 
-
+// From http://stackoverflow.com/questions/271171/sending-emails-with-javascript
 function sendMail() {
     var link = "mailto:marquinamarie@gmail.com"
              + "?cc=marquinamarie@gmail.com"
